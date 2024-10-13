@@ -1,0 +1,151 @@
+h3 {
+    color: rgb(12, 63, 88);
+    font-style: italic;
+}
+h1 {
+    color:rgba(15, 228, 19, 0.541);
+    font-style: oblique;
+    text-align: center;
+}
+p {
+    font-size: larger;
+    
+    
+}
+body {
+    background-color: azure;
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+}
+.list {
+    color:rgba(40, 74, 10, 0.501);
+}
+.list1 {
+    font-style: italic;
+}
+.a {
+    color: rgba(220, 50, 135, 0.827);
+}
+img {
+    display: flex;
+}
+.img {
+    float: right;
+}
+.table {
+    color:rgb(224, 213, 19)
+}
+button {
+    width: 355px;
+    color:  rgb(142, 70, 12);
+    background-color: rgb(85, 175, 240);
+}
+button:hover {
+    background-color: rgb(235, 180, 218);
+}
+.main {
+    background-color: rgb(203, 213, 213);
+}
+.black {
+    color: black;
+}
+.forma {
+    width: 1440px;
+    height: 100px;
+}
+.forma1 {
+    width: 80px;
+    background-color: rgb(235, 148, 148);
+}
+.email {
+    background-color: rgba(13, 35, 2, 0.274);
+}
+.text {
+    display: flex;
+    text-align: center;
+    text-shadow: 2px;
+    text-decoration: solid;
+}
+.float {
+    float: right;
+}
+.float1 {
+    float: left;
+}
+h3 {
+    text-align: center;
+    color: brown;
+}
+
+.p1 {
+    text-align: end;
+}
+.div {
+    height: 400px;
+}
+
+.huston {
+    padding-left: 280px;
+}
+
+.div1 {
+    height: 500px;
+}
+.div2 {
+    height: 300px;
+}
+
+.pading {
+    padding-left: 290px;
+}
+.pading1 {
+    text-indent: 10px;
+}
+.pading2 {
+    padding-left: 310px;
+}
+.table1 {
+    height: 130px;
+    margin: 20px;
+}
+.color1 {
+    height: 410px;
+    background-color: rgb(217, 247, 185);
+    padding-left: 280px;
+}
+aside {
+    float: left;
+    background: #acf5e9;
+    width: 13%;
+    padding: 2.5%;
+    height: 132vh;
+    color: #fff;
+    border-right: 5px solid #4d4d4d;
+
+}
+aside .logo {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+aside h3 {
+    margin-top: 50px;
+    font-size:25px;
+
+}
+
+aside ul {list-style: none}
+aside ul li {
+    color: #fff;
+    display:block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+aside ul li:hover, aside ul a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05)
+}

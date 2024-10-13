@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body class="email">
+    <h3 align="center">Ваше сообщение отправлено. Мы ответим вам на почту. Спасибо.</h3>
+    <div class="text"><a href="{{ url_for('index') }}"><button class="forma1">На главную</button></a></div>
+</body>
+
+{% endblock %}
