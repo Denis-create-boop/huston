@@ -1,29 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Houston</title>
-   
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Хьюстон — город в Техасе</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
 </head>
 <body>
-
-{% block content %}
-    <div>
-        {% block app_content %}
-
-        {% endblock %}
-    </div>
-
-{% endblock %}
-
-{% block footer %}
-
-{% endblock %}
-
-{% block scripts %}
-<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
-{% endblock %}
-
+<header class="site-header"><a class="site-brand" href="{{ url_for('index') }}">HOUSTON / TX</a><span>Город · История · Культура</span></header>
+{% block content %}{% block app_content %}{% endblock %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block scripts %}{% endblock %}
 </body>
 </html>
