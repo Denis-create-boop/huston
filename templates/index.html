@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 
 {% block app_content %}
-<aside>
+<div class="layout">
+<aside aria-label="Содержание">
         
   <span class="logo">Содержание</span>
   <ul>
@@ -32,10 +33,9 @@
       <li><a class="a" href="#city">Города-побратимы</a></li>
   </ul>
 </aside>
-
-    <hr>
-    <div class="huston">
-      <h1>Хьюстон</h1>
+<main class="article" id="top">
+<header class="hero"><p class="eyebrow">США / Техас</p><h1>Хьюстон</h1><p class="subtitle">История, природа, экономика и жизнь космического города</p></header>
+<div class="huston">
     <p><b>Хьюстон</b> (анг. Houston) - четвёртый по количеству жителей город в Соеденённых Штатах Америки и крупнейший город в штате 
       Техас с  населением 2 319 603 человека на 2017 год. Хьюстон являеться адменистративным центром округа Харрис, а также главным экономическим 
       центром агломерации Большого Хьюстона с общим населением 6 772 470 человек на 2016 год. Город располагаеться в 50 километрах Мексиканского 
@@ -53,13 +53,13 @@
     </div>
     
 
-<a href="{{ url_for('live') }}">hghghghg</a>
+
 
     <div  class="color1">
       <hr>
       <h3 id="history">История</h3>
       <p class="p1">Сэмюэль Хьюстон</p>
-      <img class="float" src="{{ url_for('static', filename='1.jpg') }}" alt="imj" width="280" height="260">
+      <img class="float" src="{{ url_for('static', filename='1.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="280" height="260">
     <p id="etimology"><b>Этимология, прозвища</b></p>
     <p>Город назван в честь Сэмюэла Хьюстона — главнокомандующего армией Техаса во время Техасской революции (1835—1836) и президента Республики 
       Техас (1836—1838, 1841—1844).</p>
@@ -75,7 +75,7 @@
     <h3 id="osnovanie">Основание</h3>
     <div class="div">
     <p class="p1">Allen’s Landing — место, где был основан город</p>
-    <img class="float" src="{{ url_for('static', filename='2.jpg') }}" alt="imj" width="280" height="250">
+    <img class="float" src="{{ url_for('static', filename='2.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="280" height="250">
 
     <p class="huston">После окончания войны за независимость Техаса, в августе 1836 года предприниматели братья Август и Джон Аллены купили 26,9 км2 земли вдоль 
       реки Буффало-Байю, планируя основать на ней населённый пункт. Они хотели, чтобы будущий город стал столицей Техаса и крупным торговым 
@@ -92,7 +92,7 @@
     <h3 id="XX"><b>XX век</b></h3>
     <div class="div1">
     <p>Мэйн-Стрит в центре, 1908 год</p>
-    <img class="float1" src="{{ url_for('static', filename='3.jpg') }}" alt="imj" width="280" height="260">
+    <img class="float1" src="{{ url_for('static', filename='3.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="280" height="260">
     
     <p class="pading">В 1900 году на Хьюстон обрушился Галвестонский ураган, продолжавшийся с 27 августа по 12 сентября. В пересчете на сегодняшний курс ущерб 
       составил бы $526 млн, погибло 8 тысяч человек. В следующем году было найдено большое месторождение нефти вблизи города Бомонт, что послужило 
@@ -122,7 +122,7 @@
     <p id="jeographic"><b>Географическое положение и климат</b></p>
     <div class="div">
     <p>Хьюстон со спутника Landsat 7</p>
-    <img class="float1" src="{{ url_for('static', filename='4.jpg') }}" alt="imj" width="300" height="260">
+    <img class="float1" src="{{ url_for('static', filename='4.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="300" height="260">
 
     <p class="pading2">Хьюстон расположен в 50 километрах от Мексиканского залива на прибрежной равнине. Значительная часть города была построена на лесных 
       угодьях, болотах и прериях, они до сих пор сохранились в близлежащих районах около Хьюстона. Город расположен на территории, для которой 
@@ -141,7 +141,7 @@
     </div>
     <hr>
     <div class="table1">
-      <table>
+      <div class="table-scroll"><table>
       <caption><b>Дни с ясной и дождливой погодой в месяц (суммарно по часам)</b></caption>
       <thead>
       <tr>
@@ -195,7 +195,7 @@
         <td align="center">136</td>
       </tr>
       </tbody>
-    </table>
+    </table></div>
     </div>
     <hr>
     
@@ -219,7 +219,7 @@
     <h3 id="flor"><b>Флора и фауна</b></h3>
     <div class="div2">
       <p class="p1">Парк Discovery green в центре Хьюстона</p>
-    <img class="float" src="{{ url_for('static', filename='5.jpg') }}" alt="imj" width="230" height="230">
+    <img class="float" src="{{ url_for('static', filename='5.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="230" height="230">
     <p>В флоре и фауне округа Харрис преобладают виды животных и растений, обитающих в болотных местностях, так как значительная часть города 
       построена на болотах и прериях.</p>
 
@@ -237,7 +237,7 @@
 
     <p id="obshee"><b>Общее состояние</b></p>
     <div>
-      <table>
+      <div class="table-scroll"><table>
       <caption><b>Крупнейшие компании, базирующиеся в Хьюстоне по версии Fortune 500 на 2016 год.</b></caption>
       <thead>
       <tr>
@@ -358,13 +358,13 @@
         <td>493</td>
       </tr>
       </tbody>
-    </table>
+    </table></div>
     </div>
     
 
     <div class="div">
       <p class="p1">Хьюстонский судоходный канал</p>
-      <img class="float" src="{{ url_for('static', filename='6.jpg') }}" alt="imj" width="300" height="230">
+      <img class="float" src="{{ url_for('static', filename='6.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="300" height="230">
 
     <p>Хьюстон является одним из ведущих городов мира в сферах добычи и переработки нефти и природного газа, из-за чего часто именуется 
       «энергетической столицей мира», а также биомедицинских исследований и аэронавтики. Также Хьюстон имеет репутацию «зелёного города»,
@@ -387,7 +387,7 @@
 
     <div class="div1">
       <p class="p1">Офис компании Chevron в Хьюстоне</p>
-      <img class="float" src="{{ url_for('static', filename='7.jpg') }}" alt="imj" width="230" height="230">
+      <img class="float" src="{{ url_for('static', filename='7.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="230" height="230">
 
     <p>В Хьюстоне находится более 5 тысяч энергетических компаний, связанных с ведением бизнеса в этом регионе. В городе находятся штаб-квартиры 
       множества энергетических и нефтяных компаний, входящих в список Fortune 500. Хьюстон является членом Всемирного партнёрства энергетических
@@ -414,7 +414,7 @@
     <h3 id="cosmo">Авиакосмическая промышленность</h3>
     <div class="div">
       <p class="p1">Космический центр им. Джонсона</p>
-      <img class="float" src="{{ url_for('static', filename='8.jpg') }}" alt="imj" width="230" height="230">
+      <img class="float" src="{{ url_for('static', filename='8.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="230" height="230">
 
     <p>В Хьюстоне располагается космический центр имени Линдона Джонсона, представляющий собой научно-исследовательское и проектно-конструкторское 
       предприятие, в котором работают 15000 человек (3000 инженеров и учёных, 12000 остальных рабочих). Всего в городе располагаются больше 150 
@@ -438,7 +438,7 @@
     <p id="dinamy"><b>Динамика и структура населения</b></p>
 
     <div class="div1">
-      <table>
+      <div class="table-scroll"><table>
       <caption><b>Перепись населения</b></caption>
       <thead>
         <tr>
@@ -539,12 +539,12 @@
           <td>10.4%</td>
         </tr>
       </tbody>
-    </table>
+    </table></div>
     </div>
     
     <div class="div2">
     <p class="p1">Этническая карта Хьюстона</p>
-    <img class="float" src="{{ url_for('static', filename='9.png') }}" alt="imj" width="230" height="230">
+    <img class="float" src="{{ url_for('static', filename='9.png') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="230" height="230">
 
     <p>Согласно данным переписи населения США в 2010 году в городе проживало 2 100 263 человек, это на 7,5 % больше, чем в 2000 году. По оценке 
       бюро переписи населения США на 1 января 2017 года население составило 2 319 603 человека. Население города, начиная с его основания, 
@@ -581,7 +581,7 @@
 
     <div class="div2">
       <p class="p1">Вещательный центр, откуда вещают радиостанции KUHT и KUHF</p>
-      <img class="float" src="{{ url_for('static', filename='10.jpg') }}" alt="imj" width="230" height="230">
+      <img class="float" src="{{ url_for('static', filename='10.jpg') }}" alt="Иллюстрация к статье о Хьюстоне" loading="lazy" width="230" height="230">
       
 
     <p>В Хьюстоне вещают 19 телеканалов. Наиболее известные телеканалы являются аффилированными каналами крупных телекомпаний: KPRC-TV (NBC), 
@@ -625,24 +625,11 @@
     <hr>
     <p></p>
 
+<a href="#top">↑ К началу статьи</a>
+</main>
+</div>
 {% endblock %}
 
 {% block footer %}
-<script>
-  function massage()
-  {
-    alert('+7123456789')
-  }
-</script>
-<table border="1px">
-  <tr>
-    <td class="main" colspan="4" align="center">Свяжитесь с нами</td>
-  </tr>
-<tr>
-  <td width="354"><a href="{{ url_for('email') }}"><button>E-mail</button></a></td>
-  <td width="354"><button onclick="massage()">phone</button></td>
-  <td width="354"><a href="http://vk.com/"><button>VK</button></td></a>
-  <td width="354"><a href="http://Instagram.com/"><button>Instagram</button></td></a>
-</tr>
-</table>
+<footer class="site-footer"><strong>Хьюстон · Свяжитесь с нами</strong><a href="{{ url_for('email') }}">E-mail</a><button type="button" onclick="alert('+7123456789')">Телефон</button><a href="https://vk.com/">VK</a><a href="https://instagram.com/">Instagram</a></footer>
 {% endblock %}
